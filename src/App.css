@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header-fix {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+}
+
+.container-home {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.ol-conteiner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills-map {
+  width: 200px;
+  display: inline-flex;
+}
+
+.skill-name {
+  font-weight: 800;
+}
+
+.skill-done {
+  color: green;
+  animation: done 1s infinite;
+  animation-direction: alternate-reverse;
+}
+
+.skill-progress {
+  color: red;
+  animation: progress 1s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes done {
+  0% {
+    color: rgb(2, 117, 2);
+  }
+  100% {
+    color: rgb(47, 251, 47);
+    font-weight: 500;
+  }
+}
+
+@keyframes progress {
+  0% {
+    color: rgb(82, 5, 5);
+  }
+  100% {
+    color: rgb(255, 66, 82);
+    font-weight: 500;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
