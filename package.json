@@ -1,7 +1,8 @@
 {
-  "name": "recipes-app-test",
+  "name": "Portifolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cacobribeiro.github.io/ShowRoom/",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^4.2.4",
@@ -28,6 +29,8 @@
     "websocket-extensions": ">=0.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "cy": "cypress run",
     "cy:open": "cypress open",
     "start": "react-scripts start",
@@ -56,6 +59,7 @@
     "cypress": "^3.7.0",
     "cypress-multi-reporters": "^1.4.0",
     "fs-extra": "^9.0.1",
+    "gh-pages": "^3.1.0",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
