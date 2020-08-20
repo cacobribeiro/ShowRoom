@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Github from './pages/Github';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
+
 const App = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const App = () => {
       </div>
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/ShowRoom" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/github" component={Github} />
           <Route exact path="/projects" component={Projects} />
