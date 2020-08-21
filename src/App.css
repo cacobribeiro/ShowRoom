@@ -6,7 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 .header-fix {
   align-items: center;
   border: 1px solid black;
@@ -70,7 +70,7 @@
     color: rgb(255, 66, 82);
     font-weight: 500;
   }
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

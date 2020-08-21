@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Github from './pages/Github';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
+import AboutMe from './pages/AboutMe';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
   return (
@@ -13,8 +15,9 @@ const App = () => {
       <div className="App">
         <Header />
       </div>
-      <div>
+      <div className="container-lg">
         <Switch>
+          <Route exact path="/sobre" component={AboutMe} />
           <Route exact path="/ShowRoom" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/github" component={Github} />
