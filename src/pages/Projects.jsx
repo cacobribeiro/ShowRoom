@@ -30,6 +30,11 @@ function Projects() {
                 <h5 class="card-title">{e.name}</h5>
                 <p class="card-text">{e.describe}</p>
                 <p class="card-text">{e.style}</p>
+                {e.done ? (
+                  <span class="ml-1 badge badge-pill float-right badge-success">Concluido!</span>
+                ) : (
+                  <span class="badge badge-pill badge-danger">Desenvolvendo!</span>
+                )}
                 <p class="card-text">
                   <small class="text-muted">{e.type}</small>
                 </p>
