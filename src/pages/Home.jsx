@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="container-fluid">
       <div className="container-lg d-flex justify-content-center">
-        <h1>cacobribeiro/ShowRoom</h1>
+        <h2 className="text-center">cacobribeiro/ShowRoom</h2>
       </div>
       <div className="container-lg d-flex justify-content-center">
         <div class="card text-white bg-secondary mb-3" style={{ maxWidth: '95%' }}>
