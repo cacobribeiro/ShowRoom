@@ -1,0 +1,320 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: #1c1e21;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.34;
+}
+
+a {
+  color: #385898;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+
+.top-bar {
+  background-color: #3b5998;
+  height: 82px;
+  width: 100%;
+}
+
+.facebook-logo {
+  background-image: url('sprite.png');
+  background-position: 0 -245px;
+  display: inline-block;
+  height: 34px;
+  margin-top: 17px;
+  width: 170px;
+}
+
+.hero {
+  background: transparent;
+}
+
+.form-top {
+  height: 65px;
+  width: 363px;
+}
+
+.col-form {
+  height: 65px;
+}
+
+.form-top form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-form-top {
+  background-color: white;
+  border: 1px solid #1d2a5b;
+  border-radius: 0;
+  color: #1c1e21;
+  font-size: 12px;
+  max-height: 23px;
+  padding: 3px 3px 4px;
+  width: 142px;
+}
+
+.btn-form-top {
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  height: 24px;
+  line-height: 18px;
+  margin-left: 15px;
+  margin-top: 21px;
+  padding: 2px 6px;
+  width: 49px;
+}
+
+.btn-form-top:hover {
+  background-color: #3b5998;
+}
+
+.label-top {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 2px;
+  max-width: 145px;
+  padding-left: 1px;
+}
+
+.forgot-pass {
+  color: #9cb4d8;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.forgot-pass a {
+  color: #9cb4d8;
+}
+
+/* DAQUI PRA CIMA OK CLIMATE */
+.gradient {
+  background: linear-gradient(white, #d3d8e8);
+}
+
+.fb-content {
+  display: flex;
+  height: 640px;
+  justify-content: space-between;
+}
+
+.fb-left {
+  width: 537px;
+}
+
+.fb-left p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.fb-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+}
+
+.chamada {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.h2 {
+  color: #333;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.h4 {
+  color: #333;
+  font-size: 19px;
+}
+
+.order-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-fb {
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  width: 398px;
+}
+
+.input-fb-sm {
+  height: 39px;
+  width: 194px;
+}
+
+.date-gender {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.gender label {
+  margin: 5px 5px 0;
+}
+
+.gender span {
+  color: #1d2129;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
+.footer-bottom a {
+  color: #385898;
+  font-size: 12px;
+  padding-right: 21px;
+}
+
+.footer-top a {
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.warning-form {
+  color: #777;
+  font-size: 11px;
+  margin-top: 15px;
+  width: 316px;
+}
+
+.last-p a {
+  color: #385898;
+}
+
+.warning-form a {
+  color: #385898;
+}
+
+.warning-form a:hover {
+  color: #385898;
+  text-decoration: underline;
+}
+
+.btn-fb-form {
+  background: linear-gradient(#79bc64, #578843);
+  border: 1px solid;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px #a4e388;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 900;
+  margin: 10px 0;
+  min-width: 194px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.last-p {
+  color: #666;
+  font-size: 13px;
+  font-weight: 900;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+.last-p a:hover {
+  color: #385898;
+  text-decoration: underline;
+}
+
+.footer {
+  line-height: 1.3;
+}
+
+.hr-footer {
+  border: 1px solid #dddfe2;
+  height: 1px;
+  margin: 0 auto 8px;
+  width: 980px;
+}
+
+.footer-top {
+  display: flex;
+  margin: 10px 178px;
+  padding-top: 8px;
+}
+
+.copywrite {
+  align-items: flex-end;
+  color: #737373;
+  font-size: 11.5px;
+  margin: 20px auto;
+  width: 981px;
+}
+
+.footer-bottom {
+  margin-left: 167px;
+  margin-right: 167px;
+}
+
+.btn-language-box {
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  border-radius: 2px;
+  color: #4b4f56;
+  height: 18px;
+  padding: 2px 8px 0;
+}
+
+.btn-language {
+  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/DmtZWLqoTvz.png');
+  background-position: -39px -279px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+
+.btn-info {
+  background-color: transparent;
+  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/KuTmU9Y4htf.png');
+  background-position: -136px -280px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}

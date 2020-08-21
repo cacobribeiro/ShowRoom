@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchRepos } from '../actions/actionRepositories';
+import Loading from '../components/Loading';
 
 function Github() {
   const dispatch = useDispatch();
@@ -17,11 +18,7 @@ function Github() {
   return (
     <div className="container-fluid">
       {!loading ? (
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
+        <Loading />
       ) : (
         repos.map((e) => {
           return (

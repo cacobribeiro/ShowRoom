@@ -4,21 +4,21 @@ import { Redirect, Link } from 'react-router-dom';
 function Header() {
   return (
     <div className="navbar navbar-dark bg-dark">
-      <Link className="btn btn-outline-light" to="/home">
+      <Link className="btn m-1 btn-outline-light" to="/home">
         Inicio
       </Link>
-      <Link className="btn btn-outline-light" to="/sobre">
+      <Link className="btn m-1 btn-outline-light" to="/sobre">
         Sobre
       </Link>
-      <Link className="btn btn-outline-light" to="/projects">
+      <Link className="btn m-1 btn-outline-light" to="/project">
         Projetos
       </Link>
-      <Link className="btn btn-outline-light" to="/github">
+      <Link className="btn m-1 btn-outline-light" to="/github">
         GitHub
       </Link>
       <Link
         onClick={() => window.open('https://www.linkedin.com/in/cacobribeiro/')}
-        className="btn btn-outline-light"
+        className="btn m-1 btn-outline-light"
         to="#"
       >
         LinkedIn
