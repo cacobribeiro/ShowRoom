@@ -9,9 +9,11 @@ function ProductList() {
 
   if (loading) return <Loading />;
   return (
-    <div class="row row-cols-1 row-cols-md-3">
+    <div className="row row-cols-1 row-cols-md-3">
       {products.map((e) => (
-        <Cards product={e} />
+        <div key={e.id}>
+          <Cards product={e} />
+        </div>
       ))}
     </div>
   );

@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   loading: false,
   projetos: [
     {
+      id: '1',
       name: 'Facebook Project',
       type: 'Trybe Project',
       style: 'CSS / HTML / BOODSTRAP 4.5',
@@ -14,6 +15,7 @@ const INITIAL_STATE = {
       url: 'project/facebook',
     },
     {
+      id: '2',
       name: 'SuperMarket',
       type: 'Individual Project',
       style: 'REACT / REDUX/ HOOKS / HTML / BOODSTRAP 4.5',

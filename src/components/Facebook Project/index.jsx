@@ -5,30 +5,30 @@ import Section from './Section';
 const Facebook = () => (
   <div style={{ width: '100%' }}>
     <header className="container">
-      <div class="top-bar">
-        <div class="wrapper header">
-          <h1 class="hero">
+      <div className="top-bar">
+        <div className="wrapper header">
+          <h1 className="hero">
             <a href="..." target="_blank">
-              <i class="facebook-logo"></i>
+              <i className="facebook-logo"></i>
             </a>
           </h1>
-          <div class="form-top">
+          <div className="form-top">
             <form action="" id="">
-              <div class="col-form">
-                <label id="user-email-phone-label" class="label-top">
+              <div className="col-form">
+                <label id="user-email-phone-label" className="label-top">
                   Email ou telefone
                 </label>
-                <input type="text" id="user-email-phone" class="input-form-top" />
+                <input type="text" id="user-email-phone" className="input-form-top" />
               </div>
-              <div class="col-form">
-                <label class="label-top">Senha</label>
-                <input type="password" id="user-password" class="input-form-top" />
-                <p class="forgot-pass">
+              <div className="col-form">
+                <label className="label-top">Senha</label>
+                <input type="password" id="user-password" className="input-form-top" />
+                <p className="forgot-pass">
                   <a href="...">Esqueceu a conta?</a>
                 </p>
               </div>
-              <div class="col-form">
-                <button id="button-login" class="btn-form-top">
+              <div className="col-form">
+                <button id="button-login" className="btn-form-top">
                   Entrar
                 </button>
               </div>

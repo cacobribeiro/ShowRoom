@@ -7,13 +7,13 @@ function Home() {
         <h2 className="text-center">cacobribeiro/ShowRoom</h2>
       </div>
       <div className="container-lg d-flex justify-content-center">
-        <div class="card text-white bg-secondary mb-3" style={{ maxWidth: '95%' }}>
-          <div class="card-header">Portifólio</div>
-          <div class="card-body">
-            <h5 class="card-title">
+        <div className="card text-white bg-secondary mb-3" style={{ maxWidth: '95%' }}>
+          <div className="card-header">Portifólio</div>
+          <div className="card-body">
+            <h5 className="card-title">
               Este site está sendo desenvolvido usando React, Hooks e Redux.
             </h5>
-            <p class="card-text">
+            <p className="card-text">
               A pouco tempo aprendi a utilizar React + Redux e foi paixão a primeira vista, achei
               uma ferramenta maravilhosa. Estudando mais a respeito aprendi que usando Hooks, nós
               seriamos capazes de utilizar deixar de lado os comandos mapStateToProps e

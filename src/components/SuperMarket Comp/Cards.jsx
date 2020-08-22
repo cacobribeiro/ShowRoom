@@ -4,30 +4,30 @@ import { Link } from 'react-router-dom';
 
 function Cards(props) {
   const dispatch = useDispatch();
-  const { id, title, price, available_quantity, condition, thumbnail, shipping } = props.product;
+  const { id, title, price, condition, thumbnail, shipping } = props.product;
   const product = props.product;
   return (
-    <div class="col mb-4">
-      <div class="card h-100">
+    <div className="col mb-4">
+      <div className="card h-100">
         <Link to={`/project/supermarket/product/${id}`}>
-          <img src={thumbnail} class=" border card-img-top" alt={id} />
-          <div class="card-body">
-            <h5 class="card-title">{title}</h5>
-            <p class="card-text">Preço: R$ {price}</p>
+          <img src={thumbnail} className=" border card-img-top" alt={id} />
+          <div className="card-body">
+            <h5 className="card-title">{title}</h5>
+            <p className="card-text">Preço: R$ {price}</p>
             {condition === 'new' ? (
-              <p class="badge badge-success">NOVO</p>
+              <p className="badge badge-success">NOVO</p>
             ) : (
-              <p class="badge badge-warning">USADO</p>
+              <p className="badge badge-warning">USADO</p>
             )}
             {shipping.free_shipping ? (
-              <span class="badge float-right badge-primary">FRETE GRÁTIS!</span>
+              <span className="badge float-right badge-primary">FRETE GRÁTIS!</span>
             ) : null}
           </div>
         </Link>
         <button
           onClick={() => dispatch({ type: 'ADD_TO_CART', cart: product })}
           type="button"
-          class="btn btn-success"
+          className="btn btn-success"
         >
           Comprar
         </button>

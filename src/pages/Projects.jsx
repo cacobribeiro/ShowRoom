@@ -22,25 +22,27 @@ function Projects() {
       ) : (
         projetos.map((e) => {
           return (
-            <div class="border border-primary card mb-3 mt-3">
+            <div key={e.id} className="border border-primary card mb-3 mt-3">
               <Link to={e.url}>
                 <img
                   style={{ backgroundImage: `url(${e.thumb})` }}
-                  class="card-img-top"
+                  className="card-img-top"
                   alt={e.name}
                 />
               </Link>
-              <div class="card-body">
-                <h5 class="card-title">{e.name}</h5>
-                <p class="card-text">{e.describe}</p>
-                <p class="card-text">{e.style}</p>
+              <div className="card-body">
+                <h5 className="card-title">{e.name}</h5>
+                <p className="card-text">{e.describe}</p>
+                <p className="card-text">{e.style}</p>
                 {e.done ? (
-                  <span class="ml-1 badge badge-pill float-right badge-success">Concluido!</span>
+                  <span className="ml-1 badge badge-pill float-right badge-success">
+                    Concluido!
+                  </span>
                 ) : (
-                  <span class="badge badge-pill float-right badge-danger">Desenvolvendo!</span>
+                  <span className="badge badge-pill float-right badge-danger">Desenvolvendo!</span>
                 )}
-                <p class="card-text">
-                  <small class="text-muted">{e.type}</small>
+                <p className="card-text">
+                  <small className="text-muted">{e.type}</small>
                 </p>
               </div>
             </div>

@@ -10,20 +10,19 @@ import { fetchProducts } from '../../actions/SuperMarket Actions/dataCart';
 function Header() {
   const dispatch = useDispatch();
   const searchbar = useSelector((state) => state.SearchInput.name);
+
   return (
-    <nav class="mb-5 navbar navbar-light bg-light">
-      <Link style={{ color: 'black' }} to="/ShowRoom">
-        <ArrowL />
-      </Link>
+    <nav className="mb-5 navbar navbar-light bg-light">
+      <ArrowL />
       <div>
         <Link style={{ color: 'black' }} to="/project/supermarket">
           <ShopIcon />
         </Link>
       </div>
-      <form class="form-inline">
+      <form className="form-inline">
         <input
           style={{ width: '70%' }}
-          class="form-control mr-sm-2"
+          className="form-control mr-sm-2"
           type="search"
           value={searchbar}
           onChange={(e) => dispatch(SearchInput(e.target.value))}
@@ -32,7 +31,7 @@ function Header() {
         />
         <button
           onClick={() => dispatch(fetchProducts(searchbar))}
-          class="btn btn-outline-success my-2 my-sm-0"
+          className="btn btn-outline-success my-2 my-sm-0"
           type="button"
         >
           Search
