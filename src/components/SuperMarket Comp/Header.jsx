@@ -37,7 +37,7 @@ function Header() {
           Search
         </button>
       </form>
-      <Link style={{ color: 'black' }} to="project/supermarket/cart">
+      <Link style={{ color: 'black' }} to="/project/supermarket/cart">
         <CartIcon />
       </Link>
     </nav>

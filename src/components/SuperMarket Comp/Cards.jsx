@@ -1,11 +1,20 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { BYID } from '../../actions/SuperMarket Actions/dataCart';
 
 function Cards(props) {
   const dispatch = useDispatch();
   const { id, title, price, condition, thumbnail, shipping } = props.product;
   const product = props.product;
+
+  const storage = (cart) => {
+    if (!localStorage.cart) localStorage.cart = JSON.stringify([]);
+    let newCart = JSON.parse(localStorage.cart);
+    newCart = [...newCart, cart];
+    return (localStorage.cart = JSON.stringify(newCart));
+  };
+
   return (
     <div className="col mb-4">
       <div className="card h-100">
@@ -25,7 +34,10 @@ function Cards(props) {
           </div>
         </Link>
         <button
-          onClick={() => dispatch({ type: 'ADD_TO_CART', cart: product })}
+          onClick={() => {
+            storage(product);
+            dispatch({ type: BYID, cart: product });
+          }}
           type="button"
           className="btn btn-success"
         >

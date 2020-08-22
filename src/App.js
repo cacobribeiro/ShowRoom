@@ -11,6 +11,7 @@ import AboutMe from './pages/AboutMe';
 import Facebook from './components/Facebook Project/index';
 import SuperMarket from './pages/SuperMarket Pages/index';
 import DetailPage from './pages/SuperMarket Pages/DetailPage';
+import Cart from './pages/SuperMarket Pages/Cart';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       </div>
       <div className="container-fluid">
         <Switch>
+          <Route exact path="/project/supermarket/cart" component={Cart} />
           <Route exact path="/project/supermarket/product/:id" component={DetailPage} />
           <Route exact path="/project/supermarket" component={SuperMarket} />
           <Route exact path="/sobre" component={AboutMe} />
