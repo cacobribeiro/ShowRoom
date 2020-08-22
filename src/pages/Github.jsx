@@ -1,19 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { fetchRepos } from '../actions/actionRepositories';
 import Loading from '../components/Loading';
 
 function Github() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchRepos());
+    // eslint-disable-next-line
   }, []);
 
   const repos = useSelector((state) => state.reducerRepositories.repos);
   const loading = useSelector((state) => state.reducerRepositories.loading);
-  const redirect = (url) => (window.location.href = url);
 
   return (
     <div className="container-fluid">

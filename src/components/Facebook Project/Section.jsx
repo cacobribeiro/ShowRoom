@@ -83,9 +83,9 @@ function Section() {
               </span>
             </div>
             <p className="warning-form">
-              Ao clicar em Cadastre-se, você concorda com nossos <a>Termos</a>,{' '}
-              <a>Política de Dados</a> e <a>Política de Cookies</a>. Você pode receber notificações
-              por SMS e pode cancelar isso quando quiser.
+              Ao clicar em Cadastre-se, você concorda com nossos <a href="...">Termos</a>,{' '}
+              <a href="...">Política de Dados</a> e <a href="...">Política de Cookies</a>. Você pode
+              receber notificações por SMS e pode cancelar isso quando quiser.
             </p>
             <button id="facebook-register" className="btn-fb-form">
               Cadastre-se
@@ -93,7 +93,7 @@ function Section() {
           </form>
           <div className="last-p">
             <p>
-              <a>Criar uma Página</a> para uma celebridade, banda ou empresa.
+              <a href="...">Criar uma Página</a> para uma celebridade, banda ou empresa.
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Facebook = () => (
       <div class="top-bar">
         <div class="wrapper header">
           <h1 class="hero">
-            <a href="#" target="_blank">
+            <a href="..." target="_blank">
               <i class="facebook-logo"></i>
             </a>
           </h1>
@@ -24,7 +24,7 @@ const Facebook = () => (
                 <label class="label-top">Senha</label>
                 <input type="password" id="user-password" class="input-form-top" />
                 <p class="forgot-pass">
-                  <a href="#">Esqueceu a conta?</a>
+                  <a href="...">Esqueceu a conta?</a>
                 </p>
               </div>
               <div class="col-form">
@@ -76,7 +76,7 @@ const Facebook = () => (
           <a href="https://ja-jp.facebook.com/" class="link-language" title="Japonese">
             日本語
           </a>
-          <a class="btn-language-box" href="#">
+          <a class="btn-language-box" href="...">
             <i class="btn-language"></i>
           </a>
         </div>

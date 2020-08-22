@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/Header';
 import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
@@ -8,7 +9,8 @@ import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import AboutMe from './pages/AboutMe';
 import Facebook from './components/Facebook Project/index';
-import 'bootstrap/dist/css/bootstrap.css';
+import SuperMarket from './pages/SuperMarket Pages/index';
+import DetailPage from './pages/SuperMarket Pages/DetailPage';
 
 const App = () => {
   return (
@@ -16,8 +18,10 @@ const App = () => {
       <div className="App">
         <Header />
       </div>
-      <div className="container-lg">
+      <div className="container-fluid">
         <Switch>
+          <Route exact path="/project/supermarket/product/:id" component={DetailPage} />
+          <Route exact path="/project/supermarket" component={SuperMarket} />
           <Route exact path="/sobre" component={AboutMe} />
           <Route exact path="/ShowRoom" component={Home} />
           <Route exact path="/project/facebook" component={Facebook} />

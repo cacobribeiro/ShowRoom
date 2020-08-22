@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Loading from '../components/Loading';
-import facebookLogo from '../images/facebook-logo.jpg';
 
 function Projects() {
   const dispatch = useDispatch();
@@ -13,6 +12,7 @@ function Projects() {
 
   useEffect(() => {
     dispatch({ type: 'SHOW_PROJECTS', loading: true });
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -24,7 +24,11 @@ function Projects() {
           return (
             <div class="border border-primary card mb-3 mt-3">
               <Link to={e.url}>
-                <img src={facebookLogo} class="card-img-top" alt={e.name} />
+                <img
+                  style={{ backgroundImage: `url(${e.thumb})` }}
+                  class="card-img-top"
+                  alt={e.name}
+                />
               </Link>
               <div class="card-body">
                 <h5 class="card-title">{e.name}</h5>
@@ -33,7 +37,7 @@ function Projects() {
                 {e.done ? (
                   <span class="ml-1 badge badge-pill float-right badge-success">Concluido!</span>
                 ) : (
-                  <span class="badge badge-pill badge-danger">Desenvolvendo!</span>
+                  <span class="badge badge-pill float-right badge-danger">Desenvolvendo!</span>
                 )}
                 <p class="card-text">
                   <small class="text-muted">{e.type}</small>

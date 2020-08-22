@@ -1,4 +1,4 @@
-import { SEARCH_NAME } from '../actions/SearchInput.js';
+import { SEARCH_NAME } from '../../actions/SuperMarket Actions/SearchInput.js';
 
 const INITIAL_STATE = {
   name: '',
